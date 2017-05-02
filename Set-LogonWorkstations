@@ -50,7 +50,7 @@ foreach ($Item in $ImportCSV) {
             #Set specified user to specified logon workstation(s)
             Set-ADUser -Identity $User -LogonWorkstations $Computernames
 
-            Write-Host -ForegroundColor Yellow "`nNotice: [$User] Logon Workstations updated successfully."
+            Write-Host -ForegroundColor Green "`nSuccess: [$User] Logon Workstations updated successfully."
         }
 
         Catch {
